@@ -14,14 +14,20 @@ if (document.getElementById("dyke_noty")) {
 		element.style.top = "20px";
 		element.style.display = "block";
 		if (type == 'success') {		
-			element.style.backgroundColor = "green";
+			element.style.backgroundColor = "#99d683";
 			element.style.borderBottom = "5px solid #263";
 		}
 		if (type == 'warning') {		
-			element.style.backgroundColor = "yellow";
+			element.style.backgroundColor = "#ffca4a";
+			element.style.borderBottom = "5px solid #ffca4f";
 		}
 		if (type == 'error') {		
-			element.style.backgroundColor = "red";
+			element.style.backgroundColor = "#f96262";
+			element.style.borderBottom = "5px solid #f96269";
+		}
+		if (type == 'info') {		
+			element.style.backgroundColor = "#aaa";
+			element.style.borderBottom = "5px solid #eee";
 		}
 		element.onclick = function(){
 			element.style.display = "none";
